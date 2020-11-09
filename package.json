@@ -4,21 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "jest --verbose"
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand"
   },
   "author": "Jani Ervasti",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
+    "expect": "^26.6.2",
     "express": "^4.17.1",
     "mongoose": "^5.10.9"
   },
   "devDependencies": {
     "jest": "^26.6.0",
-    "nodemon": "^2.0.5"
+    "nodemon": "^2.0.5",
+    "supertest": "^5.0.0"
   },
   "jest": {
     "testEnvironment": "node"

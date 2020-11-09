@@ -85,8 +85,6 @@ return {"author":writers[authorwithmostblogs], "blogs":mostblogs};
 
 const mostLikes = (blogs) => {
 
-    console.log(blogs[0].likes)
-
     var writers = [] // Alustetaan lista kirjojen kirjoittajista
     var mostlikes = 0 // Alustetaan eniten likeja saaneen kirjailijan likejen määrä
     var authorwithmostlikes = 0 // Alustetaan eniten likeja saaneen kirjailijan index listalla
