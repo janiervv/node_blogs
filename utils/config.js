@@ -1,10 +1,10 @@
 require('dotenv').config()
 
 let PORT = 3003
-let MONGODB_URI = 'process.env.mongodb+srv://fullstack_user:FullStackSalasana123@cluster0.z5ztf.mongodb.net/blog?retryWrites=true'
+let MONGODB_URI = 'XXXX'
 
 if (process.env.NODE_ENV === 'test') {
-  MONGODB_URI = 'process.env.mongodb+srv://fullstack_user:FullStackSalasana123@cluster0.z5ztf.mongodb.net/blog_tests?retryWrites=true'
+  MONGODB_URI = 'YYYY'
 }
 
 module.exports = {

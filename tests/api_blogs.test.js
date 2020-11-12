@@ -40,7 +40,7 @@ test('blog length is 2', async () => {
 test('blog ID like id', async () => {
     const response = await api.get('/api/blogs')
 
-    expect(response.body[0]._id).toBeDefined();
+    expect(response.body[0].id).toBeDefined();
 })
 
 test('blog can be added', async () => {
@@ -62,6 +62,7 @@ test('blog can be added', async () => {
 
       expect(response.body).toHaveLength(initialBlogs.length + 1)
 })
+
 
 test('Likes to 0 if null', async () => {
 
